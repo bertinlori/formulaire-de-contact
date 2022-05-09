@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <section class="main-area">
+        <div class="main-content">
+            <form class="signup-form" action="action_page.php" style="border:1px solid #ccc">
+                <div class="container">
+                <h2>S'enregistrer</h2>
+                <p>Entrez les informations suivantes.</p>
+                <hr>
+
+                <label for="lname"><b>Nom</b></label>
+                <input type="text" placeholder="Entrez votre nom" name="lname" required>
+
+                <label for="fname"><b>Prénom</b></label>
+                <input type="text" placeholder="Entrez votre prénom" name="fname" required>
+
+                <div class="user-choice-part">
+                    <p>Choisissez une option dans la liste.</p>
+                    <select name="user-choice" id="user-choice">
+                        <option value="0">Prise de contact</option>
+                        <option value="1">Rédaction client</option>
+                    </select>
+                </div>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Se rappeler
+                </label>
+
+                <p>En créant un compte, tu accepte les <a href="#" style="color:dodgerblue">Conditions d'utilisation</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Annuler</button>
+                    <button type="submit" class="signupbtn">S'enregistrer</button>
+                </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
